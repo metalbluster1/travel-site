@@ -1,0 +1,30 @@
+.row {
+    @mixin clearfix;
+
+    @mixin atSmall {
+
+        &--medium-4 {
+            float: left;
+            width: 33.333%;
+            &--larger {
+                width: 37%;
+            }
+        }
+        &--medium-8 {
+            float: right;
+            width: 66.666%;
+            &--smaller {
+                width: 63%;
+            }
+        }
+    }
+    
+
+    &--gutter {
+        margin-right: -65px;
+    }
+    &--gutter > div {
+        padding-right: 65px;
+    }
+    
+}
