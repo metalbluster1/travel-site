@@ -1,21 +1,27 @@
 .row {
     @mixin clearfix;
 
-    @mixin atSmall {
-
+    @mixin atMedium {
+        &--b-margin-untill-medium {
+            margin-bottom: 0;
+        }
         &--medium-4 {
             float: left;
             width: 33.333%;
-            &--larger {
+            &--medium-4--larger {
                 width: 37%;
             }
         }
         &--medium-8 {
             float: right;
             width: 66.666%;
-            &--smaller {
+            &--medium-8--smaller {
                 width: 63%;
             }
+        }
+        &--medium-6 {
+            float: left;
+            width: 50%;
         }
     }
     
@@ -26,5 +32,10 @@
     &--gutter > div {
         padding-right: 65px;
     }
-    
+    &--gutter-large {
+        margin-right: -100px;
+    }
+    &--gutter-large > div {
+        padding-right: 100px;
+    }
 }
