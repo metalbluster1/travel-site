@@ -24,10 +24,37 @@
             width: 50%;
         }
     }
+    @mixin atLarge {
+        &--b-margin-untill-large {
+            margin-bottom: 0;
+        }
+        &--large-4 {
+            float: left;
+            width: 33.333%;
+            &--medium-4--larger {
+                width: 37%;
+            }
+        }
+        &--large-8 {
+            float: right;
+            width: 66.666%;
+            &--medium-8--smaller {
+                width: 63%;
+            }
+        }
+        &--large-6 {
+            float: left;
+            width: 50%;
+        }
+    }
     
 
     &--gutter {
         margin-right: -65px;
+    }
+
+    &--t-padding {
+        padding-top: 80px;
     }
     &--gutter > div {
         padding-right: 65px;
@@ -35,7 +62,36 @@
     &--gutter-large {
         margin-right: -100px;
     }
+
+    &--gutter-small {
+        padding-right: -45px;
+    }
+
     &--gutter-large > div {
         padding-right: 100px;
+    }
+
+    &--gutter-small > div {
+        padding-right: 45px;
+    }
+
+    /* Equal height rules */
+    &--equal-height-at-small {
+        @mixin atLarge {
+            display: flex;
+        }
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+    &--equal-height-at-large {
+        @mixin atMedium {
+            display: flex;
+        }
+        & > div {
+            float: none;
+            display: flex;
+        }
     }
 }
