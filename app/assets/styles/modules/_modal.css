@@ -27,7 +27,7 @@
     &__description {
         text-align: center;
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.65;
     }
 
@@ -40,8 +40,8 @@
         transform-origin: 100% 0;
         cursor: pointer;
         color: $mainBlue;
-    }
-    &__close:hover {
+        &:hover {
         color: $mainOrange;
+        }
     }
 }

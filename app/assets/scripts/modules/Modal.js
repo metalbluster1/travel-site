@@ -21,7 +21,7 @@ class Modal {
     }
   }
 
-  openTheMOdal() {
+  openTheModal() {
     this.modal.classList.add("modal--is-visible")
   }
 

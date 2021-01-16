@@ -16,4 +16,4 @@ class MobileMenu {
         this.menuIcon.classList.toggle("site-header--menu-icon--close-x")
     }
 }
-export default MobileMenu
+export default MobileMenu;
