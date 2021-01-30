@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-class ClientArean {
+class ClientArea {
     constructor() {
         this.injectHTML()
         this.form = document.querySelector(".client-area__form")
@@ -43,4 +43,4 @@ class ClientArean {
     }
 }
 
-export default ClientArean
+export default ClientArea
