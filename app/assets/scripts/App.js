@@ -3,7 +3,7 @@ import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/sticky-header'
-import ClientArean from './modules/Client_Area'
+import ClientArea from './modules/Client_Area'
 
 new ClientArea()
 let stickyHeader = new StickyHeader()
